@@ -1,0 +1,27 @@
+name: xkcd
+version: "0.1.0"
+author: vedranvinko <vinkovedran@gmail.com>
+about: Get xkcd comics in terminal
+args:
+  - number:
+      short: n
+      long: number
+      required: false
+      takes_value: true
+      default_value: "0"
+      help: "Comic number to fetch"
+
+  - output:
+      short: o
+      long: output
+      required: false
+      takes_value: true
+      default_value: "text"
+      help: "Print output in format: text/json"
+
+  - save:
+      short: s
+      long: save
+      required: false
+      takes_value: true
+      help: "Save image to current directory"
